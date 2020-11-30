@@ -1,10 +1,9 @@
 {
-    "name": "yuwa/work_schedule",
+    "name": "w/work_schedule",
     "description": "",
     "authors": [
         {
-            "name": "w.a",
-            "email": "yumab187jp-wk@yahoo.co.jp"
+            "name": "w.a"
         }
     ],
     "require": {}
