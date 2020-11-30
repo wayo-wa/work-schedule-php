@@ -1,0 +1,49 @@
+/*===============================
+ フォームコンテンツ
+===============================*/
+.c-form {
+    &-container {
+        padding: 0 5%;
+    }
+    &-label {
+        padding-bottom: 5px;
+        &.err input {
+            background: #f3d6d6;
+        }
+        &--lg {
+            font-size: 20px;
+        }
+    }
+    &__area-msg {
+        color: $point-color;
+    }
+    &__input {
+        display: block;
+        width: 100%;
+        background: #fff;
+        border-radius: 5px;
+        border: 2px solid #a5a3a1;
+        padding: 10px;
+        &--sm {
+            text-align: center;
+            letter-spacing: 0.7em;
+        }
+    }
+    &__checkbox {
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+    }
+    &-foot {
+        font-size: 14px;
+        width: 85%;
+    }
+    &__cat {
+        font-size: 20px;
+        padding: 8px 0;
+    }
+    &-header__name {
+        font-size: 20px;
+    }
+}
+

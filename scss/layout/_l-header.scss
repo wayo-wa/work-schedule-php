@@ -1,0 +1,11 @@
+/*===============================
+ レイアウト（header）
+===============================*/
+.l-header {
+    background: $bgColor-point;
+    width: 100%;
+    &__inner {
+        height: 60px;
+        padding: 0 7%;
+    }
+}

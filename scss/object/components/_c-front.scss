@@ -1,0 +1,18 @@
+/*===============================
+ indexページ
+===============================*/
+.c-front {
+    &-title {
+        font-size: 40px;
+        @include mq() {
+            font-size: 32px;
+        }
+    }
+    &-text {
+        font-size: 18px;
+        line-height: 2em;
+        @include mq() {
+            line-height: 1.5em;
+        }
+    }
+}

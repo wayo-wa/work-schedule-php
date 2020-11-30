@@ -1,0 +1,11 @@
+/*===============================
+ P-header
+===============================*/
+.p-header {
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+}

@@ -1,0 +1,15 @@
+/*===============================
+ mypage
+===============================*/
+.c-table {
+    width: 100%;
+    font-size: 18px;
+    @include mq() {
+        width: 500px;
+    }
+    &__item {
+        background: #fff;
+        border: 1px solid #9c9c98;
+        text-align: center;
+    }
+}

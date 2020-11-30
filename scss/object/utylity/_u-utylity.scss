@@ -1,0 +1,19 @@
+/*===============================
+ ユーティリティ
+===============================*/
+.u-point-color {
+    color: $point-color;
+}
+
+.u-mg-8 {
+    margin: 8px;
+}
+
+.u-mgt-24 {
+    margin-top: 24px;
+}
+
+.u-supp-text { /*補足文*/
+    font-size: 12px;
+    padding-left: 5px;
+}

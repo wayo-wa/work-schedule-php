@@ -1,0 +1,41 @@
+/*===============================
+ base
+===============================*/
+html,body {
+    width: 100%;
+    color: #474746;
+    background: $bgColor-main;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 auto;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: .3s;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+:focus {
+    outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+option {
+    width: 100%;
+}

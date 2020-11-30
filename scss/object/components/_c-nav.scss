@@ -1,0 +1,18 @@
+/*===============================
+ C-nav
+===============================*/
+.c-nav {
+    &__link {
+        color: #fff;
+    }
+    &__list {
+        padding: 8px;
+        @include mq() {
+            padding: 16px;
+            border-top: 1px solid #fff;
+            &:last-child {
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+}

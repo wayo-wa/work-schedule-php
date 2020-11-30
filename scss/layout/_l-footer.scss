@@ -1,0 +1,14 @@
+/*===============================
+ レイアウト（footer）
+===============================*/
+.l-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: $bgColor-point;
+    color: #fff;
+    padding: 8px 0;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+}

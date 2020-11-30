@@ -1,0 +1,15 @@
+/*===============================
+ C-header
+===============================*/
+.c-header {
+    &__title {
+        color: #fff;
+        font-size: 28px;
+        @include mq() {
+            font-size: 24px;
+        }
+        &--link:hover {
+            text-decoration: none;
+        }
+    }
+}

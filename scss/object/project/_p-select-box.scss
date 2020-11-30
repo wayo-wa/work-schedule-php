@@ -1,0 +1,21 @@
+/*===============================
+ P-select-box
+===============================*/
+.p-select-box {
+    &--sm {
+        width: 60px;
+        padding: 5px 15px;
+        margin: 0 8px 0 16px;
+        border-radius: 5px;
+    }
+    &--md {
+        width: 80px;
+        padding: 5px 10px;
+        margin: 0 8px 0 16px;
+        border-radius: 5px;
+    }
+    &--lg {
+        width: 150px;
+        padding: 5px 10px;
+    }
+}

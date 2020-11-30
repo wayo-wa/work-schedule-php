@@ -1,0 +1,31 @@
+/*===============================
+ ボタン
+===============================*/
+.c-btn {
+    text-align: center;
+    width: 100%;
+    background: $btn-color_main;
+    color: #fff;
+    &__search {
+        background: $btn-color_sub;
+        color: #fff;
+        padding: 5px;
+    }
+    &--modify {
+        background: $btn-color_sub;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &--shadow {
+        margin-bottom: 32px;
+        border-radius: 5px;
+        padding: 8px;
+        transition: all .3s;
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 4px 4px 4px #9c9c98;
+
+        }
+    }
+}

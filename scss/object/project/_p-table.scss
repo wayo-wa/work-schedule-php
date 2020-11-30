@@ -1,0 +1,10 @@
+/*===============================
+ mypage
+===============================*/
+.p-table__scroll {
+    @include mq() {
+        overflow: auto;
+        white-space: nowrap;
+        padding-bottom: 8px;
+    }
+}
