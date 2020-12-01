@@ -15,8 +15,8 @@
  //デバッグログ関数
  function debug($str) {
     global $debug_flg;
-     if(!empty($debug_flg)) { //※開発中 
-    //  if(empty($debug_flg)) { 
+    //  if(!empty($debug_flg)) { //※開発中 
+     if(empty($debug_flg)) { 
          error_log('デバッグ：'.$str);
      }
  }
