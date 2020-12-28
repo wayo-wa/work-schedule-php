@@ -1,5 +1,5 @@
 <footer class="l-footer">
-    <p>© 2020 Work Schedule</p>
+    <p>© 2020 Work Schedule - PHP -</p>
 </footer>
 
 <!-- jquery -->
