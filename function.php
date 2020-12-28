@@ -163,8 +163,8 @@
  //=================================
  function dbConnect() {
      //DB接続情報を読み込む
-     require_once __DIR__ . '/../../db_info/require.php';
-     $db = dbSetting();
+    //  require_once __DIR__ . '/../../db_info/require.php';
+    //  $db = dbSetting();
 
     //local用
     //  $dbh = 'mysql:dbname=work_schedule;host=localhost;charset=utf8';
@@ -172,10 +172,12 @@
     //heroku用
      $dbh = 'mysql:dbname=heroku_8f6dc3fa8d8721b;host=us-cdbr-east-02.cleardb.com;charset=utf8';
 
-    //db_infoから読み込む
-     $user = $db['db_user'];
-     $password = $db['db_pass'];
-     
+     $user = 'b247c32b10dde8';
+     $password = '2cafb2d5';
+     //db_infoから読み込む
+    //  $user = $db['db_user'];
+    //  $password = $db['db_pass'];
+
      $option = array(
          PDO::ATTR_ERRMODE => PDO::ERRMODE_SILENT,
          PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
