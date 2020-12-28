@@ -1,1 +1,5 @@
 
+[28-Dec-2020 14:59:26 Asia/Tokyo] PHP Notice:  Undefined index: CLEARDB_DATABASE_URL in C:\xampp\db_info\require.php on line 4
+[28-Dec-2020 14:59:26 Asia/Tokyo] PHP Notice:  Undefined index: user in C:\xampp\db_info\require.php on line 6
+[28-Dec-2020 14:59:26 Asia/Tokyo] PHP Notice:  Undefined index: pass in C:\xampp\db_info\require.php on line 7
+[28-Dec-2020 14:59:27 Asia/Tokyo] エラー発生：SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)

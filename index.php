@@ -24,7 +24,7 @@
 
 <?php
  require('header.php');
-?>
+ ?>
 
 <!-- メインコンテンツ -->
 <main>
