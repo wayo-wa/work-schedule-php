@@ -6,5 +6,7 @@
             "name": "w.a"
         }
     ],
-    "require": {}
+    "require": {
+        "ext-mbstring": "*"
+    }
 }
