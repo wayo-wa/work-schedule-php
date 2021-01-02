@@ -15,8 +15,8 @@
  //デバッグログ関数
  function debug($str) {
     global $debug_flg;
-    //  if(!empty($debug_flg)) { //※開発中 
-     if(empty($debug_flg)) { 
+     if(!empty($debug_flg)) { //※開発中 
+    //  if(empty($debug_flg)) { 
          error_log('デバッグ：'.$str);
      }
  }
@@ -161,32 +161,41 @@
  //=================================
  // データベース関連
  //=================================
- function dbConnect() {
-     //DB接続情報を読み込む
-    //  require_once __DIR__ . '/../../db_info/require.php';
-    //  $db = dbSetting();
+ function dbConnect(){
+    $db = parse_url($_SERVER['CLEARDB_DATABASE_URL']);
+    $db['dbname'] = ltrim($db['path'], '/');
+    $dsn = "mysql:host={$db['host']};dbname={$db['dbname']};charset=utf8";
+    $user = $db['user'];
+    $password = $db['pass'];
+    $options = array(
+      PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+      PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+      PDO::MYSQL_ATTR_USE_BUFFERED_QUERY =>true,
+    );
+    $dbh = new PDO($dsn,$user,$password,$options);
+    return $dbh;
+  }
 
-    //local用
-    //  $dbh = 'mysql:dbname=work_schedule;host=localhost;charset=utf8';
+//  function dbConnect() {
+     
+//      //DB接続情報を読み込む
+//      require_once __DIR__ . '/../../db_info/require.php';
+//      $db = dbSetting();
 
-    //heroku用
-     $dbh = 'mysql:dbname=heroku_8f6dc3fa8d8721b;host=us-cdbr-east-02.cleardb.com;charset=utf8';
+//     //local用
+//      $dbh = 'mysql:dbname=work_schedule;host=localhost;charset=utf8';
+//      $user = $db['db_user'];
+//      $password = $db['db_pass'];
 
-     $user = 'b247c32b10dde8';
-     $password = '2cafb2d5';
-     //db_infoから読み込む
-    //  $user = $db['db_user'];
-    //  $password = $db['db_pass'];
-
-     $option = array(
-         PDO::ATTR_ERRMODE => PDO::ERRMODE_SILENT,
-         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-         PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
-     );
-     //PDOオブジェクト生成（DBへ接続）
-     $dbh = new PDO($dbh, $user, $password, $option);
-     return $dbh;
- }
+//      $option = array(
+//          PDO::ATTR_ERRMODE => PDO::ERRMODE_SILENT,
+//          PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+//          PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
+//      );
+//      //PDOオブジェクト生成（DBへ接続）
+//      $dbh = new PDO($dbh, $user, $password, $option);
+//      return $dbh;
+//  }
  
 
  //クエリ作成関数

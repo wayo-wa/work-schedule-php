@@ -3,3 +3,454 @@
 [28-Dec-2020 14:59:26 Asia/Tokyo] PHP Notice:  Undefined index: user in C:\xampp\db_info\require.php on line 6
 [28-Dec-2020 14:59:26 Asia/Tokyo] PHP Notice:  Undefined index: pass in C:\xampp\db_info\require.php on line 7
 [28-Dec-2020 14:59:27 Asia/Tokyo] エラー発生：SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)
+[29-Dec-2020 13:11:35 Asia/Tokyo] エラー発生：SQLSTATE[HY000] [1045] Access denied for user 'b247c32b10dde8'@'localhost' (using password: YES)
+[29-Dec-2020 13:11:38 Asia/Tokyo] エラー発生：SQLSTATE[HY000] [1045] Access denied for user 'b247c32b10dde8'@'localhost' (using password: YES)
+[31-Dec-2020 21:55:14 Asia/Tokyo] デバッグ：[[[[[[[[[[[[[[[[[[[[
+[31-Dec-2020 21:55:14 Asia/Tokyo] デバッグ：ログアウト
+[31-Dec-2020 21:55:14 Asia/Tokyo] デバッグ：[[[[[[[[[[[[[[[[[[[[
+[31-Dec-2020 21:55:14 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[31-Dec-2020 21:55:14 Asia/Tokyo] デバッグ：セッションID:2af7v620rud76hi4cglmq1s1f1
+[31-Dec-2020 21:55:14 Asia/Tokyo] デバッグ：セッション変数の中身:Array
+(
+    [user_id] => 2
+    [login_date] => 1609419111
+    [login_limit] => 3600
+)
+
+[31-Dec-2020 21:55:14 Asia/Tokyo] デバッグ：現在日時:1609419314
+[31-Dec-2020 21:55:14 Asia/Tokyo] デバッグ：ログアウトします
+[31-Dec-2020 21:55:14 Asia/Tokyo] デバッグ：[[[[[[[[[[[[[[[[[[[[
+[31-Dec-2020 21:55:14 Asia/Tokyo] デバッグ：トップページ
+[31-Dec-2020 21:55:14 Asia/Tokyo] デバッグ：[[[[[[[[[[[[[[[[[[[[
+[31-Dec-2020 21:55:14 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[31-Dec-2020 21:55:14 Asia/Tokyo] デバッグ：セッションID:tmesvnajc8ar0lib49vc3vurng
+[31-Dec-2020 21:55:14 Asia/Tokyo] デバッグ：セッション変数の中身:Array
+(
+)
+
+[31-Dec-2020 21:55:14 Asia/Tokyo] デバッグ：現在日時:1609419314
+[31-Dec-2020 21:55:14 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理終了
+[31-Dec-2020 21:55:16 Asia/Tokyo] デバッグ：[[[[[[[[[[[[[[[[[[[[
+[31-Dec-2020 21:55:16 Asia/Tokyo] デバッグ：ログイン認証
+[31-Dec-2020 21:55:16 Asia/Tokyo] デバッグ：[[[[[[[[[[[[[[[[[[[[
+[31-Dec-2020 21:55:16 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[31-Dec-2020 21:55:16 Asia/Tokyo] デバッグ：セッションID:ttni5onudhdj88mnlr5kqv0ga2
+[31-Dec-2020 21:55:16 Asia/Tokyo] デバッグ：セッション変数の中身:Array
+(
+)
+
+[31-Dec-2020 21:55:16 Asia/Tokyo] デバッグ：現在日時:1609419316
+[31-Dec-2020 21:55:16 Asia/Tokyo] デバッグ：未ログインユーザー
+[31-Dec-2020 21:55:16 Asia/Tokyo] デバッグ：[[[[[[[[[[[[[[[[[[[[
+[31-Dec-2020 21:55:16 Asia/Tokyo] デバッグ：ログインページ
+[31-Dec-2020 21:55:16 Asia/Tokyo] デバッグ：[[[[[[[[[[[[[[[[[[[[
+[31-Dec-2020 21:55:16 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[31-Dec-2020 21:55:16 Asia/Tokyo] デバッグ：セッションID:ttni5onudhdj88mnlr5kqv0ga2
+[31-Dec-2020 21:55:16 Asia/Tokyo] デバッグ：セッション変数の中身:Array
+(
+)
+
+[31-Dec-2020 21:55:16 Asia/Tokyo] デバッグ：現在日時:1609419316
+[31-Dec-2020 21:55:16 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理終了
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：[[[[[[[[[[[[[[[[[[[[
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：ログイン認証
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：[[[[[[[[[[[[[[[[[[[[
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：セッションID:5rnsk5fej5n7q2hdb4odne1van
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：セッション変数の中身:Array
+(
+)
+
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：現在日時:1609419324
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：未ログインユーザー
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：[[[[[[[[[[[[[[[[[[[[
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：ログインページ
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：[[[[[[[[[[[[[[[[[[[[
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：セッションID:5rnsk5fej5n7q2hdb4odne1van
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：セッション変数の中身:Array
+(
+)
+
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：現在日時:1609419324
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：バリエーションチェックOKです
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：クエリ成功
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：パスワード一致
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：マイページに遷移します
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：[[[[[[[[[[[[[[[[[[[[
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：ログイン認証
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：[[[[[[[[[[[[[[[[[[[[
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：セッションID:jv5mjh4gmuu2vbmi1vmp5scu8v
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：セッション変数の中身:Array
+(
+    [user_id] => 2
+    [login_date] => 1609419324
+    [login_limit] => 3600
+)
+
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：現在日時:1609419324
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：ログイン済みユーザー
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：有効期限内
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：[[[[[[[[[[[[[[[[[[[[
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：マイページ
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：[[[[[[[[[[[[[[[[[[[[
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：セッションID:jv5mjh4gmuu2vbmi1vmp5scu8v
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：セッション変数の中身:Array
+(
+    [user_id] => 2
+    [login_date] => 1609419324
+    [login_limit] => 3600
+)
+
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：現在日時:1609419324
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：ユーザー基本情報を取得します。
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：クエリ成功
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：ユーザーの当月の打刻情報を取得します。
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：u_id?:2
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：ym?:2020-12月
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：クエリ成功
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：u_id:2
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：today:2020-12-31
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：クエリ成功
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：検索用の年月を取得します
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：u_idは：2
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：クエリ成功
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：年月と一致する打刻情報を取得します。
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：u_id?:2
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：ym?:
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：クエリ成功
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：年月と一致する打刻情報を取得：Array
+(
+)
+
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：当月の打刻情報:Array
+(
+    [0] => Array
+        (
+            [id] => 27
+            [today] => 2020-12-04
+            [ym] => 2020-12月
+            [start] => 0900
+            [closed] => 1800
+            [sort] => 通常
+            [user] => 2
+            [week] => 金
+            [break] => 60
+        )
+
+    [1] => Array
+        (
+            [id] => 29
+            [today] => 2020-12-06
+            [ym] => 2020-12月
+            [start] => 0900
+            [closed] => 1200
+            [sort] => 半勤
+            [user] => 2
+            [week] => 日
+            [break] => 0
+        )
+
+    [2] => Array
+        (
+            [id] => 30
+            [today] => 2020-12-07
+            [ym] => 2020-12月
+            [start] => 0900
+            [closed] => 1800
+            [sort] => 通常
+            [user] => 2
+            [week] => 月
+            [break] => 60
+        )
+
+    [3] => Array
+        (
+            [id] => 31
+            [today] => 2020-12-08
+            [ym] => 2020-12月
+            [start] => 0900
+            [closed] => 1800
+            [sort] => 通常
+            [user] => 2
+            [week] => 火
+            [break] => 60
+        )
+
+    [4] => Array
+        (
+            [id] => 32
+            [today] => 2020-12-09
+            [ym] => 2020-12月
+            [start] => 0900
+            [closed] => 1800
+            [sort] => 有休
+            [user] => 2
+            [week] => 水
+            [break] => 60
+        )
+
+    [5] => Array
+        (
+            [id] => 33
+            [today] => 2020-12-10
+            [ym] => 2020-12月
+            [start] => 0900
+            [closed] => 1830
+            [sort] => 通常
+            [user] => 2
+            [week] => 木
+            [break] => 60
+        )
+
+    [6] => Array
+        (
+            [id] => 34
+            [today] => 2020-12-15
+            [ym] => 2020-12月
+            [start] => 0900
+            [closed] => 1800
+            [sort] => 通常
+            [user] => 2
+            [week] => 火
+            [break] => 60
+        )
+
+    [7] => Array
+        (
+            [id] => 35
+            [today] => 2020-12-16
+            [ym] => 2020-12月
+            [start] => 0900
+            [closed] => 1800
+            [sort] => 通常
+            [user] => 2
+            [week] => 水
+            [break] => 60
+        )
+
+    [8] => Array
+        (
+            [id] => 36
+            [today] => 2020-12-17
+            [ym] => 2020-12月
+            [start] => 0900
+            [closed] => 1800
+            [sort] => 通常
+            [user] => 2
+            [week] => 木
+            [break] => 60
+        )
+
+    [9] => Array
+        (
+            [id] => 37
+            [today] => 2020-12-18
+            [ym] => 2020-12月
+            [start] => 0900
+            [closed] => 1800
+            [sort] => 通常
+            [user] => 2
+            [week] => 金
+            [break] => 60
+        )
+
+    [10] => Array
+        (
+            [id] => 38
+            [today] => 2020-12-21
+            [ym] => 2020-12月
+            [start] => 0900
+            [closed] => 1800
+            [sort] => 有休
+            [user] => 2
+            [week] => 月
+            [break] => 60
+        )
+
+    [11] => Array
+        (
+            [id] => 39
+            [today] => 2020-12-22
+            [ym] => 2020-12月
+            [start] => 0900
+            [closed] => 1800
+            [sort] => 通常
+            [user] => 2
+            [week] => 火
+            [break] => 60
+        )
+
+    [12] => Array
+        (
+            [id] => 40
+            [today] => 2020-12-23
+            [ym] => 2020-12月
+            [start] => 0900
+            [closed] => 1800
+            [sort] => 通常
+            [user] => 2
+            [week] => 水
+            [break] => 60
+        )
+
+    [13] => Array
+        (
+            [id] => 41
+            [today] => 2020-12-24
+            [ym] => 2020-12月
+            [start] => 0900
+            [closed] => 1800
+            [sort] => 通常
+            [user] => 2
+            [week] => 木
+            [break] => 60
+        )
+
+    [14] => Array
+        (
+            [id] => 42
+            [today] => 2020-12-25
+            [ym] => 2020-12月
+            [start] => 0900
+            [closed] => 1800
+            [sort] => 通常
+            [user] => 2
+            [week] => 金
+            [break] => 60
+        )
+
+    [15] => Array
+        (
+            [id] => 44
+            [today] => 2020-12-27
+            [ym] => 2020-12月
+            [start] => 0900
+            [closed] => 1200
+            [sort] => 通常
+            [user] => 2
+            [week] => 日
+            [break] => 0
+        )
+
+    [16] => Array
+        (
+            [id] => 45
+            [today] => 2020-12-28
+            [ym] => 2020-12月
+            [start] => 0900
+            [closed] => 1800
+            [sort] => 通常
+            [user] => 2
+            [week] => 月
+            [break] => 60
+        )
+
+    [17] => Array
+        (
+            [id] => 46
+            [today] => 2020-12-30
+            [ym] => 2020-12月
+            [start] => 0900
+            [closed] => 1200
+            [sort] => 半勤
+            [user] => 2
+            [week] => 水
+            [break] => 0
+        )
+
+)
+
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：検索用年月は:Array
+(
+    [0] => Array
+        (
+            [ym] => 2020-08月
+        )
+
+    [1] => Array
+        (
+            [ym] => 2020-09月
+        )
+
+    [2] => Array
+        (
+            [ym] => 2020-10月
+        )
+
+    [3] => Array
+        (
+            [ym] => 2020-11月
+        )
+
+    [4] => Array
+        (
+            [ym] => 2020-12月
+        )
+
+)
+
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理終了
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：$dbFormData:
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：$dbChoseStampingData:
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：$dbYmData:Array
+(
+)
+
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：$dbFormData:
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：$dbChoseStampingData:
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：$dbYmData:Array
+(
+)
+
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：$dbFormData:
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：$dbChoseStampingData:
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：$dbYmData:Array
+(
+)
+
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：$dbFormData:
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：$dbChoseStampingData:
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：$dbYmData:Array
+(
+)
+
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：$dbFormData:
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：$dbChoseStampingData:
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：$dbYmData:Array
+(
+)
+
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：$dbFormData:
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：$dbChoseStampingData:
+[31-Dec-2020 21:55:24 Asia/Tokyo] デバッグ：$dbYmData:Array
+(
+)
+
+[31-Dec-2020 21:56:30 Asia/Tokyo] デバッグ：[[[[[[[[[[[[[[[[[[[[
+[31-Dec-2020 21:56:30 Asia/Tokyo] デバッグ：ログアウト
+[31-Dec-2020 21:56:30 Asia/Tokyo] デバッグ：[[[[[[[[[[[[[[[[[[[[
+[31-Dec-2020 21:56:30 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[31-Dec-2020 21:56:30 Asia/Tokyo] デバッグ：セッションID:psimnrr0uqmjocqhcjct0qj4l7
+[31-Dec-2020 21:56:30 Asia/Tokyo] デバッグ：セッション変数の中身:Array
+(
+    [user_id] => 2
+    [login_date] => 1609419324
+    [login_limit] => 3600
+)
+
+[31-Dec-2020 21:56:30 Asia/Tokyo] デバッグ：現在日時:1609419390
+[31-Dec-2020 21:56:30 Asia/Tokyo] デバッグ：ログアウトします
+[31-Dec-2020 21:56:30 Asia/Tokyo] デバッグ：[[[[[[[[[[[[[[[[[[[[
+[31-Dec-2020 21:56:30 Asia/Tokyo] デバッグ：トップページ
+[31-Dec-2020 21:56:30 Asia/Tokyo] デバッグ：[[[[[[[[[[[[[[[[[[[[
+[31-Dec-2020 21:56:30 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理開始
+[31-Dec-2020 21:56:30 Asia/Tokyo] デバッグ：セッションID:oim1gk9h8m25v4f73vqpc8ge7n
+[31-Dec-2020 21:56:30 Asia/Tokyo] デバッグ：セッション変数の中身:Array
+(
+)
+
+[31-Dec-2020 21:56:30 Asia/Tokyo] デバッグ：現在日時:1609419390
+[31-Dec-2020 21:56:30 Asia/Tokyo] デバッグ：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>画面表示処理終了
