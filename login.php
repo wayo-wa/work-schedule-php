@@ -66,8 +66,8 @@
                         $_SESSION['login_limit'] = $sesLimit;
                     }
                     debug('マイページに遷移します');
-                    // header("Location:mypage.php");
-                    // exit();;
+                    header("Location:mypage.php");
+                    exit();;
                 }else{
                     debug('パスワードが一致しません');
                     $err_msg['common'] = MSG09;//メールアドレスまたはパスワードが違います
