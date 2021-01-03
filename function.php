@@ -26,10 +26,16 @@
  //=================================
  //セッションファイルの置き場所
  ini_set('session.save_handler', 'memcached');
- ini_set('session.save_path', 'PERSISTENT=pool ' . getenv('MEMCACHIER_SERVERS'));
- ini_set('Memcached.sess_binary', 1);
- ini_set('Memcached.sess_sasl_username', getenv('MEMCACHIER_USERNAME'));
- ini_set('Memcached.sess_sasl_password', getenv('MEMCACHIER_PASSWORD'));
+ ini_set('session.save_path', getenv('MEMCACHIER_SERVERS'));
+ if(version_compare(phpversion('memcached'), '3', '>=')) {
+    ini_set('memcached.sess_persistent', 1);
+    ini_set('memcached.sess_binary_protocol', 1);
+ } else {
+    ini_set('session.save_path', 'PERSISTENT=myapp_session ' . ini_get('session.save_path'));
+    ini_set('memcached.sess_binary', 1);
+ }
+ini_set('memcached.sess_sasl_username', getenv('MEMCACHIER_USERNAME'));
+ini_set('memcached.sess_sasl_password', getenv('MEMCACHIER_PASSWORD'));
  //ガーページコレクションが削除するセッションの有効期限の設定
  ini_set('session.gc_maxlifetime', 60*60*24*30);
  //ブラウザを閉じてもクッキー自体の有効期限を伸ばす

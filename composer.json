@@ -8,6 +8,7 @@
     ],
     "require": {
         "ext-mbstring": "*",
-        "ext-memcached": "*"
+        "ext-memcached": "*",
+        "predis/predis": "1.1.6"
     }
 }
