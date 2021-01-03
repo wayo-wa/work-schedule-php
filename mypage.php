@@ -1,7 +1,7 @@
 <?php
  require('function.php');
  //ログイン認証
-//  require('auth.php');
+ require('auth.php');
 
  debug('[[[[[[[[[[[[[[[[[[[[');
  debug('マイページ');
