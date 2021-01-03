@@ -21,10 +21,9 @@ if(!empty($_SESSION['login_date'])) {
     }
 }else{
     debug('未ログインユーザー');
-    header("Location:mypage.php");
-    // if(basename($_SERVER['PHP_SELF']) === 'mypage.php' || basename($_SERVER['PHP_SELF']) === 'stamping.php'){
-    //     header("Location:index.php");
-    //     exit();
-    // }
+    if(basename($_SERVER['PHP_SELF']) === 'mypage.php' || basename($_SERVER['PHP_SELF']) === 'stamping.php'){
+        header("Location:index.php");
+        exit();
+    }
 }
 
