@@ -25,7 +25,11 @@
  // セッション準備・セッション有効期限を延ばす
  //=================================
  //セッションファイルの置き場所
- session_save_path("C:/xampp/tmp");
+ ini_set('session.save_handler', 'memcached');
+ ini_set('session.save_path', 'PERSISTENT=pool ' . getenv('MEMCACHIER_SERVERS'));
+ ini_set('Memcached.sess_binary', 1);
+ ini_set('Memcached.sess_sasl_username', getenv('MEMCACHIER_USERNAME'));
+ ini_set('Memcached.sess_sasl_password', getenv('MEMCACHIER_PASSWORD'));
  //ガーページコレクションが削除するセッションの有効期限の設定
  ini_set('session.gc_maxlifetime', 60*60*24*30);
  //ブラウザを閉じてもクッキー自体の有効期限を伸ばす
@@ -34,6 +38,20 @@
  session_start();
  //現在のセッションIDを新しく生成したものと置き換える
  session_regenerate_id();
+
+ //=================================
+ // セッション準備・セッション有効期限を延ばす
+ //=================================
+//  //セッションファイルの置き場所
+//  session_save_path("C:/xampp/tmp");
+//  //ガーページコレクションが削除するセッションの有効期限の設定
+//  ini_set('session.gc_maxlifetime', 60*60*24*30);
+//  //ブラウザを閉じてもクッキー自体の有効期限を伸ばす
+//  ini_set('session_cookie_lifetime', 60*60*24*30);
+//  //セッションを使う
+//  session_start();
+//  //現在のセッションIDを新しく生成したものと置き換える
+//  session_regenerate_id();
 
  //=================================
  // 画面表示処理開始ログ吐き出し関数
