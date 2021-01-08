@@ -36,6 +36,7 @@
  }
 ini_set('memcached.sess_sasl_username', getenv('MEMCACHIER_USERNAME'));
 ini_set('memcached.sess_sasl_password', getenv('MEMCACHIER_PASSWORD'));
+
  //ガーページコレクションが削除するセッションの有効期限の設定
  ini_set('session.gc_maxlifetime', 60*60*24*30);
  //ブラウザを閉じてもクッキー自体の有効期限を伸ばす

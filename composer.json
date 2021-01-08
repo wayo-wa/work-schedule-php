@@ -9,6 +9,7 @@
     "require": {
         "ext-mbstring": "*",
         "ext-memcached": "*",
-        "predis/predis": "1.1.6"
+        "predis/predis": "1.1.6",
+        "php": "~7.1.0"
     }
 }
