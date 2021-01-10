@@ -18,11 +18,12 @@
  $today = date('Y-m-d');//DB登録用変数
  $ym = date('Y-m月');//DB登録用変数
  $today_ymd = date('Y年m月d日');//表示用変数
-
- debug('ym?:'.print_r($ym, true));
-
+ 
  //今日の打刻情報があるかどうか
  $dbFormData = (!empty($_SESSION['user_id']) && !empty($today)) ? getTodayStamping($_SESSION['user_id'], $today) : ''; 
+ //今日の打刻情報があるが、直接「本日打刻」に来た場合
+ $stm_id = (!empty($dbFormData)) ? $dbFormData['id'] : '';
+ 
  //修正ボタンから飛んできた場合、st_idを格納
  $st_id = (!empty($_GET['st_id'])) ? $_GET['st_id'] : '';
  //DBからst_idと一致する打刻データを取得
@@ -75,8 +76,13 @@
             $dbh = dbConnect();
             if($edit_flg) {
                 debug('更新です。');
-                $sql = 'UPDATE stamping SET sort_id = :sort_id, start = :start, closed = :closed, break_id = :break_id WHERE user_id = :user_id AND id = :st_id';
-                $data = array(':user_id' => $_SESSION['user_id'], ':sort_id' => $sort_id, ':start' => $start, ':closed' => $closed, ':break_id' => $break_id, ':st_id' => $st_id);
+                if(!empty($st_id)) {
+                    $sql = 'UPDATE stamping SET sort_id = :sort_id, start = :start, closed = :closed, break_id = :break_id WHERE user_id = :user_id AND id = :st_id';
+                    $data = array(':user_id' => $_SESSION['user_id'], ':sort_id' => $sort_id, ':start' => $start, ':closed' => $closed, ':break_id' => $break_id, ':st_id' => $st_id);                
+                }elseif(!empty($stm_id)) {
+                    $sql = 'UPDATE stamping SET sort_id = :sort_id, start = :start, closed = :closed, break_id = :break_id WHERE user_id = :user_id AND id = :stm_id';
+                    $data = array(':user_id' => $_SESSION['user_id'], ':sort_id' => $sort_id, ':start' => $start, ':closed' => $closed, ':break_id' => $break_id, ':stm_id' => $stm_id);
+                }
             }else {
                 debug('新規登録です。');
                 $sql = 'INSERT INTO stamping (user_id, sort_id, today, ym, week, start, closed, break_id, create_date) 
