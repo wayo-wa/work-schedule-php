@@ -1,7 +1,7 @@
 ●勤怠時間等の登録、検索、更新、削除が行えるアプリです。
   
 ●使用ＯＳ：windows10  
-●データベース：xampp(MariaDB)
+●データベース：xampp(MariaDB)  
 ●作成目的：PHP言語学習の為。  
 ●使用言語：HTML/CSS/PHP  
 
