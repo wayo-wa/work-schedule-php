@@ -76,7 +76,7 @@
             $dbh = dbConnect();
             if($edit_flg) {
                 debug('更新です。');
-                //修正ボタンから飛んできた場合
+                //mypageの修正ボタンから飛んできた場合
                 if(!empty($st_id)) {
                     $sql = 'UPDATE stamping SET sort_id = :sort_id, start = :start, closed = :closed, break_id = :break_id WHERE user_id = :user_id AND id = :st_id';
                     $data = array(':user_id' => $_SESSION['user_id'], ':sort_id' => $sort_id, ':start' => $start, ':closed' => $closed, ':break_id' => $break_id, ':st_id' => $st_id);                
