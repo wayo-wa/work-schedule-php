@@ -15,6 +15,6 @@
 （登録・修正・削除時にメッセージが出ます。）  
 
   
-![screencapture-wk-sch2021-herokuapp-mypage-php-2021-01-10-14_52_52](https://user-images.githubusercontent.com/73923419/104115521-a1fc7580-5353-11eb-87fd-60023b0fe614.png)
+![screencapture-wk-sch2021-herokuapp-mypage-php-2021-01-10-15_39_03](https://user-images.githubusercontent.com/73923419/104116314-d1fb4700-535a-11eb-8193-a52d5447878d.png)
 
 
