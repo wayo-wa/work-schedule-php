@@ -15,8 +15,7 @@
  //デバッグログ関数
  function debug($str) {
     global $debug_flg;
-     if(!empty($debug_flg)) { //※開発中 
-    //  if(empty($debug_flg)) { 
+     if(!empty($debug_flg)) {
          error_log('デバッグ：'.$str);
      }
  }
@@ -24,19 +23,6 @@
  //=================================
  // セッション準備・セッション有効期限を延ばす
  //=================================
- //セッションファイルの置き場所
- ini_set('session.save_handler', 'memcached');
- ini_set('session.save_path', getenv('MEMCACHIER_SERVERS'));
- if(version_compare(phpversion('memcached'), '3', '>=')) {
-    ini_set('memcached.sess_persistent', 1);
-    ini_set('memcached.sess_binary_protocol', 1);
- } else {
-    ini_set('session.save_path', 'PERSISTENT=myapp_session ' . ini_get('session.save_path'));
-    ini_set('memcached.sess_binary', 1);
- }
-ini_set('memcached.sess_sasl_username', getenv('MEMCACHIER_USERNAME'));
-ini_set('memcached.sess_sasl_password', getenv('MEMCACHIER_PASSWORD'));
-
  //ガーページコレクションが削除するセッションの有効期限の設定
  ini_set('session.gc_maxlifetime', 60*60*24*30);
  //ブラウザを閉じてもクッキー自体の有効期限を伸ばす
@@ -45,20 +31,6 @@ ini_set('memcached.sess_sasl_password', getenv('MEMCACHIER_PASSWORD'));
  session_start();
  //現在のセッションIDを新しく生成したものと置き換える
  session_regenerate_id();
-
- //=================================
- // セッション準備・セッション有効期限を延ばす
- //=================================
-//  //セッションファイルの置き場所
-//  session_save_path("C:/xampp/tmp");
-//  //ガーページコレクションが削除するセッションの有効期限の設定
-//  ini_set('session.gc_maxlifetime', 60*60*24*30);
-//  //ブラウザを閉じてもクッキー自体の有効期限を伸ばす
-//  ini_set('session_cookie_lifetime', 60*60*24*30);
-//  //セッションを使う
-//  session_start();
-//  //現在のセッションIDを新しく生成したものと置き換える
-//  session_regenerate_id();
 
  //=================================
  // 画面表示処理開始ログ吐き出し関数
@@ -186,49 +158,31 @@ ini_set('memcached.sess_sasl_password', getenv('MEMCACHIER_PASSWORD'));
  //=================================
  // データベース関連
  //=================================
- function dbConnect(){
-    $db = parse_url($_SERVER['CLEARDB_DATABASE_URL']);
-    $db['dbname'] = ltrim($db['path'], '/');
-    $dsn = "mysql:host={$db['host']};dbname={$db['dbname']};charset=utf8";
-    $user = $db['user'];
-    $password = $db['pass'];
-    $options = array(
-      PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-      PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-      PDO::MYSQL_ATTR_USE_BUFFERED_QUERY =>true,
-    );
-    $dbh = new PDO($dsn,$user,$password,$options);
-    return $dbh;
-  }
-
-//  function dbConnect() {
+　function dbConnect() {
      
-//      //DB接続情報を読み込む
-//      require_once __DIR__ . '/../../db_info/require.php';
-//      $db = dbSetting();
+     //DB接続情報を読み込む
+     require_once __DIR__ . '/../../*****/*****.php';
+     $db = dbSetting();
 
-//     //local用
-//      $dbh = 'mysql:dbname=work_schedule;host=localhost;charset=utf8';
-//      $user = $db['db_user'];
-//      $password = $db['db_pass'];
+     $dbh = 'mysql:dbname=******;host=localhost;charset=utf8';
+     $user = $db['******'];
+     $password = $db['******'];
 
-//      $option = array(
-//          PDO::ATTR_ERRMODE => PDO::ERRMODE_SILENT,
-//          PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-//          PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
-//      );
-//      //PDOオブジェクト生成（DBへ接続）
-//      $dbh = new PDO($dbh, $user, $password, $option);
-//      return $dbh;
-//  }
+     $option = array(
+         PDO::ATTR_ERRMODE => PDO::ERRMODE_SILENT,
+         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+         PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
+     );
+     //PDOオブジェクト生成（DBへ接続）
+     $dbh = new PDO($dbh, $user, $password, $option);
+     return $dbh;
+ }
  
 
  //クエリ作成関数
  function queryPost($dbh, $sql, $data) {
      $stmt = $dbh->prepare($sql);
      if(!$stmt->execute($data)){
-         debug('クエリに失敗しました');
-         debug('sqlエラー:'.print_r($stmt->errorInfo(),true));
          global $err_msg;
          $err_msg['common'] = MSG08;
          return 0;
@@ -256,10 +210,6 @@ ini_set('memcached.sess_sasl_password', getenv('MEMCACHIER_PASSWORD'));
      global $dbChoseStampingData;//修正ボタンが押された打刻情報
      global $dbYmData;//検索年月と一致する打刻情報
      global $err_msg;
-
-     debug('$dbFormData:'.print_r($dbFormData, true));
-     debug('$dbChoseStampingData:'.print_r($dbChoseStampingData, true));
-     debug('$dbYmData:'.print_r($dbYmData, true));
 
      //DBデータと比較する必要がない場合
      if(isset($dbYmData) && empty($dbFomeData) && empty($dbChoseStampingData)) {
@@ -430,8 +380,6 @@ ini_set('memcached.sess_sasl_password', getenv('MEMCACHIER_PASSWORD'));
  //=================================
  function getYmData($u_id, $ym) {
      debug('年月と一致する打刻情報を取得します。');
-     debug('u_id?:'.print_r($u_id, true));
-     debug('ym?:'.print_r($ym, true));
      try {
         $dbh = dbConnect();
         $sql = 'SELECT
