@@ -76,9 +76,11 @@
             $dbh = dbConnect();
             if($edit_flg) {
                 debug('更新です。');
+                //修正ボタンから飛んできた場合
                 if(!empty($st_id)) {
                     $sql = 'UPDATE stamping SET sort_id = :sort_id, start = :start, closed = :closed, break_id = :break_id WHERE user_id = :user_id AND id = :st_id';
                     $data = array(':user_id' => $_SESSION['user_id'], ':sort_id' => $sort_id, ':start' => $start, ':closed' => $closed, ':break_id' => $break_id, ':st_id' => $st_id);                
+                //本日打刻ページに直接きた場合
                 }elseif(!empty($stm_id)) {
                     $sql = 'UPDATE stamping SET sort_id = :sort_id, start = :start, closed = :closed, break_id = :break_id WHERE user_id = :user_id AND id = :stm_id';
                     $data = array(':user_id' => $_SESSION['user_id'], ':sort_id' => $sort_id, ':start' => $start, ':closed' => $closed, ':break_id' => $break_id, ':stm_id' => $stm_id);
