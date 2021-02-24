@@ -2,7 +2,7 @@
   
 #### 勤務時間の登録・更新・削除、登録した勤怠情報の検索が行えるサイトです。  
 ●使用ＯＳ：windows10  
-●データベース：xampp Mysql(MariaDB)  
+●データベース：ClearDB Mysql  
 ●作成目的：PHP言語学習の為。  
 ●使用言語：HTML/SCSS/PHP/JS(jQuery,Ajax)  
 ●制作日数：約20日間
