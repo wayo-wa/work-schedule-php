@@ -10,7 +10,7 @@
 #### トップ画面 
   
 ![screencapture-wk-sch2021-herokuapp-2021-01-10-13_47_44](https://user-images.githubusercontent.com/73923419/104114721-f5b69100-534a-11eb-9a40-6933f1aea9ad.png)  
-<img src="https://user-images.githubusercontent.com/73923419/104114721-f5b69100-534a-11eb-9a40-6933f1aea9ad.png" width="300px">
+<img src="https://user-images.githubusercontent.com/73923419/104114721-f5b69100-534a-11eb-9a40-6933f1aea9ad.png" width="800px">
 <img src="https://user-images.githubusercontent.com/73923419/105647830-8f557500-5eeb-11eb-8b1d-ac3adccd9529.png" width="300px">
   
 #### マイページ画面
