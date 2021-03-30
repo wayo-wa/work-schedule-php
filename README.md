@@ -8,6 +8,9 @@
 ●使用言語：HTML/SCSS/PHP/JS(jQuery,Ajax)  
 ●制作日数：約20日間
 
+#### アプリケーション概要　
+出退勤をWEB上で管理するアプリケーションです。
+
 #### トップ画面 
   
 <img src="https://user-images.githubusercontent.com/73923419/104114721-f5b69100-534a-11eb-9a40-6933f1aea9ad.png" width="650px">
