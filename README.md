@@ -11,8 +11,8 @@
 #### 【URL】　
 &emsp;&emsp;https://wk-sch2021.herokuapp.com/<br> 
 &emsp;&emsp;テスト用アカウント<br>
-&emsp;&emsp;・ メールアドレス:&emsp;abcd123@com<br>
-&emsp;&emsp;・ パスワード:&emsp;111111<br>
+&emsp;&emsp;・ メールアドレス&emsp;:&emsp;abcd123@com<br>
+&emsp;&emsp;・ パスワード&emsp;:&emsp;111111<br>
 
 
 #### トップ画面 
