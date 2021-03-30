@@ -9,7 +9,7 @@
 #### 【アプリケーション概要】　
 &emsp;&emsp;勤務時間の登録・更新・削除、登録した勤怠履歴の検索が行えるアプリケーションです。 
 #### 【URL】　
-&emsp;&emsp;https://dashboard.heroku.com/apps/wk-sch2021 
+&emsp;&emsp;https://dashboard.heroku.com/apps/wk-sch2021<br> 
 &emsp;&emsp;テスト用アカウント
 
 
