@@ -21,8 +21,8 @@
 &emsp;&emsp;6)&emsp;「修正」ボタン押下後、本日打刻ページに遷移します。内容を修正して「更新する」を押下して下さい。<br>
 &emsp;&emsp;7)&emsp;「削除」ボタン押下すると、選択された勤怠情報が削除されます。<br> 
 #### 【補足】<br>
-&emsp;&emsp;「マイページ」の「削除」処理について。画面遷移せず、削除処理だけを行いたいので、data属性に変数$val['id']<br> 
-&emsp;&emsp;を付与し、ajaxDelete.phpへ値を渡し非同期通信(ajax)にて行いました。<br> 
+&emsp;&emsp;「マイページ」の「削除」処理について。画面遷移せず削除処理を行いたいので、data属性に変数$val['id']を付与し、<br> 
+&emsp;&emsp;ajaxDelete.phpへ値を渡し非同期通信(ajax)にて行いました。<br> 
 ```
 <input class="p-btn c-btn c-btn--modify js-button-click" data-stampingid="<?php echo $val['id']; ?>" type="submit" value="削除">
 ```
