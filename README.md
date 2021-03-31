@@ -23,7 +23,7 @@
 #### 【余談】<br>
 &emsp;&emsp;「マイページ」の「削除」処理について。画面遷移せず、削除処理だけを行いたいので、data属性に変数$val['id']<br> 
 &emsp;&emsp;を付与し、ajaxDelete.phpへ値を渡し非同期通信(ajax)にて行いました。<br> 
-```ああああ<br>
+```ああああ<br>```
 #### トップ画面 
 
 <img src="https://user-images.githubusercontent.com/73923419/104114721-f5b69100-534a-11eb-9a40-6933f1aea9ad.png" width="650px">
