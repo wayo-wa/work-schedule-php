@@ -25,7 +25,7 @@
 &emsp;&emsp;を付与し、ajaxDelete.phpへ値を渡し非同期通信(ajax)にて行いました。<br> 
 &emsp;&emsp;```<input class="p-btn c-btn c-btn--modify js-button-click" data-stampingid="<?php echo $val['id']; ?>" type="submit" value="削除">```
 ```python
-import pyxel
+<input class="p-btn c-btn c-btn--modify js-button-click" data-stampingid="<?php echo $val['id']; ?>" type="submit" value="削除">
 ```
 #### トップ画面 
 
